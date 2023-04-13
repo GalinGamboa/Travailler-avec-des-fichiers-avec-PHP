@@ -31,8 +31,10 @@
     ?>  
 </div> 
 
-
-
+<?php
+    include("../layouts/reading.php");
+?>
+<!--
 
 <div class="box">
     <?php
@@ -47,7 +49,7 @@
     ?>
 </div>
 
-
+-->
         
 <?php
     include ("../layouts/footer.php")
