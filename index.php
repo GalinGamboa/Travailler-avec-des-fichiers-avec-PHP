@@ -12,7 +12,6 @@
 ?>
 
 <div class="box">
-    
     <?php
         if(file_exists('./dosier_destination/texte.txt')){
             $handle = fopen("./dosier_destination/texte.txt", "r");
@@ -24,11 +23,7 @@
             }
     ?>
 </div>
-
     
 <?php
     include ("./layouts/footer.php")
 ?>
-
-
-

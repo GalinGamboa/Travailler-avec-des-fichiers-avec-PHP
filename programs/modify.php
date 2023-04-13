@@ -1,6 +1,7 @@
 <?php
     include ("../layouts/menu.php")
 ?>
+
 <?php
     if(!file_exists('../dosier_destination/texte.txt')){
         header('location:../index.php?message="Impossible de changer contenu dans un fichier qui n\'existe pas"');
@@ -27,29 +28,12 @@
         fclose($fhandle);
         header('location:../index.php?message="Contenu modifié avec succès"');
         }
-        
     ?>  
 </div> 
 
 <?php
     include("../layouts/reading.php");
 ?>
-<!--
-
-<div class="box">
-    <?php
-        if(file_exists('../dosier_destination/texte.txt')){
-            $handle = fopen("../dosier_destination/texte.txt", "r");
-            echo '<h3>texte.txt</h3>';
-                while (!feof($handle)){
-                    $flinea = fgets($handle);
-                    echo( $flinea . '<br>');
-                }  
-        }
-    ?>
-</div>
-
--->
         
 <?php
     include ("../layouts/footer.php")

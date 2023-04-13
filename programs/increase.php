@@ -20,13 +20,13 @@
     </form>
     
     <?php
-    if($_GET){
-        $newContent = "<br>".$_GET['newContent'];
-        $fhandle = fopen('..//dosier_destination/texte.txt','a+');
-        fwrite($fhandle,$newContent);
-        fclose($fhandle);
-        header('location: ../index.php?message="Le contenu a été augmenté avec succès"');
-        }
+        if($_GET){
+            $newContent = "<br>".$_GET['newContent'];
+            $fhandle = fopen('..//dosier_destination/texte.txt','a+');
+            fwrite($fhandle,$newContent);
+            fclose($fhandle);
+            header('location: ../index.php?message="Le contenu a été augmenté avec succès"');
+            }
     ?>  
 </div> 
 
